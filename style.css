@@ -1,0 +1,13 @@
+
+body {
+  background-color: rgb(86, 160, 57);
+}
+
+.quien {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
+    position: absolute; 
+    color: pink; 
+    text-decoration: none;
+    text-underline-offset: none;
+    right: 20px;
+}
