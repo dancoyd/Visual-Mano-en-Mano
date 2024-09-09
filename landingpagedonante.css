@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+header{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+  }
+  .logo a {
+    display: flex;
+    gap: 15px;
+  }
+  .logo img {
+    height: 70px;
+    width: auto;
+  }
+  
+  header nav {
+    display: flex;
+    gap: 12px;
+  }
+  /* clase de nombre de logo */
+  .nombrePagina{ 
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-size: 24px;
+    font-family: "Red Hat Display", sans-serif;
+  }
+  body {
+    background-image: url('./Group\ 114.svg');
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    background-size: 100% auto; /* Ajusta el ancho al 100% sin alterar la altura proporcional */
+    background-position: top center; /* Coloca la imagen centrada en la parte superior */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */}
+    .misdonaciones{
+      color: rgb(255, 254, 254); /* Texto en blanco */
+      text-align: center; /* Texto centrado */
+      font-size: 15px; /* Tamaño del texto reducido */
+      text-decoration: none; /* Sin subrayado */  
+      display: flex;
+      justify-content: center; /* Centra el contenido horizontalmente */
+      align-items: center; /* Centra el contenido verticalmente */
+      margin-right: 20px;
+      font-family: "Open Sans", sans-serif;
+      font-weight:bolder;
+    }
+    .misdonaciones {
+      cursor: pointer;
+      position: relative;
+      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition-duration: 400ms;
+      transition-property: color;
+    }
+    
+    .misdonaciones:focus,
+    .misdonaciones:hover {
+      color: #fff;
+    }
+    
+    .misdonaciones:focus:after,
+    .misdonaciones:hover:after {
+      width: 100%;
+      left: 0%;
+    }
+    
+    .misdonaciones:after {
+      content: "";
+      pointer-events: none;
+      bottom: -2px;
+      left: 50%;
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background-color: #fff;
+      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition-duration: 400ms;
+      transition-property: width, left;
+    }
+    .mismegusta{
+      color: rgb(255, 254, 254); /* Texto en blanco */
+      text-align: center; /* Texto centrado */
+      font-size: 15px; /* Tamaño del texto reducido */
+      text-decoration: none; /* Sin subrayado */  
+      display: flex;
+      justify-content: center; /* Centra el contenido horizontalmente */
+      align-items: center; /* Centra el contenido verticalmente */
+      margin-right: 20px;
+      font-family: "Open Sans", sans-serif;
+      font-weight:bolder;
+    }
+    .mismegusta {
+      cursor: pointer;
+      position: relative;
+      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition-duration: 400ms;
+      transition-property: color;
+    }
+    
+    .mismegusta:focus,
+    .mismegusta:hover {
+      color: #fff;
+    }
+    
+    .mismegusta:focus:after,
+    .mismegusta:hover:after {
+      width: 100%;
+      left: 0%;
+    }
+    
+    .mismegusta:after {
+      content: "";
+      pointer-events: none;
+      bottom: -2px;
+      left: 50%;
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background-color: #fff;
+      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition-duration: 400ms;
+      transition-property: width, left;
+    }
+    .home{
+      color: rgb(255, 254, 254); /* Texto en blanco */
+      text-align: center; /* Texto centrado */
+      font-size: 15px; /* Tamaño del texto reducido */
+      text-decoration: none; /* Sin subrayado */  
+      display: flex;
+      justify-content: center; /* Centra el contenido horizontalmente */
+      align-items: center; /* Centra el contenido verticalmente */
+      margin-right: 20px;
+      font-family: "Open Sans", sans-serif;
+      font-weight:bolder;
+    }
+    .home {
+      cursor: pointer;
+      position: relative;
+      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition-duration: 400ms;
+      transition-property: color;
+    }
+    
+    .home:focus,
+    .home:hover {
+      color: #fff;
+    }
+    
+    .home:focus:after,
+    .home:hover:after {
+      width: 100%;
+      left: 0%;
+    }
+    
+    .home:after {
+      content: "";
+      pointer-events: none;
+      bottom: -2px;
+      left: 50%;
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background-color: #fff;
+      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition-duration: 400ms;
+      transition-property: width, left;
+    }
+    .botonquien{
+      color: rgb(255, 254, 254); /* Texto en blanco */
+      text-align: center; /* Texto centrado */
+      font-size: 15px; /* Tamaño del texto reducido */
+      text-decoration: none; /* Sin subrayado */  
+      display: flex;
+      justify-content: center; /* Centra el contenido horizontalmente */
+      align-items: center; /* Centra el contenido verticalmente */
+      margin-right: 20px;
+      font-family: "Open Sans", sans-serif;
+      font-weight:bolder;
+    }
+    .botonquien {
+      cursor: pointer;
+      position: relative;
+      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition-duration: 400ms;
+      transition-property: color;
+    }
+    
+    .botonquien:focus,
+    .botonquien:hover {
+      color: #fff;
+    }
+    
+    .botonquien:focus:after,
+    .botonquien:hover:after {
+      width: 100%;
+      left: 0%;
+    }
+    
+    .botonquien:after {
+      content: "";
+      pointer-events: none;
+      bottom: -2px;
+      left: 50%;
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background-color: #fff;
+      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition-duration: 400ms;
+      transition-property: width, left;
+    }

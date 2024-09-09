@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+header{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+  }
+  .logo a {
+    display: flex;
+    gap: 15px;
+  }
+  .logo img {
+    height: 70px;
+    width: auto;
+  }
+  
+  header nav {
+    display: flex;
+    gap: 12px;
+  }
+  /* clase de nombre de logo */
+  .nombrePagina{ 
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-size: 24px;
+    font-family: "Red Hat Display", sans-serif;
+  }
+  body {
+    background-image: url('./Group\ 114.svg');
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    background-size: 100% auto; /* Ajusta el ancho al 100% sin alterar la altura proporcional */
+    background-position: top center; /* Coloca la imagen centrada en la parte superior */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */}
+    .conteiner{
+        display: flex;
+        margin: 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+        align-items: center;
+        background-color: white; /* Color de fondo de la caja */
+        border-radius: 20px; /* Bordes redondeados */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        padding: 30px; /* Espacio interior */
+        width: fit-content; /* Tamaño automático basado en el contenido */
+
+      }
+      .Email{
+        background-color: #E8EFFB; /* Color de fondo */
+        border: none; /* Sin bordes */
+        color: rgb(0, 0, 0); /* Texto en blanco */
+        text-align: center; /* Texto centrado */
+        text-decoration: none; /* Sin subrayado */
+        display: inline-block; /* Mostrar como bloque en línea */
+        font-size: 17px; /* Tamaño del texto reducido */
+        font-weight: bold; /* Texto en negrita */
+        border-radius: 15px; /* Bordes redondeados más pequeños */
+        transition: background-color 0.3s, transform 0.2s; /* Transición suave de color y efecto de clic */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        cursor: pointer; /* Cambia el cursor a puntero */
+        width: 370px; /* Botón más pequeño */
+        height: 50px; /* Altura más pequeña */
+        display: flex;
+        justify-content: center; /* Centra el contenido horizontalmente */
+        align-items: center; /* Centra el contenido verticalmente */
+        font-family: "Montserrat", sans-serif;
+        margin: 10px;
+        transition: 0.3s ease;
+      }
+      .Contraseña{
+        background-color: #E8EFFB; /* Color de fondo */
+        border: none; /* Sin bordes */
+        color: rgb(0, 0, 0); /* Texto en blanco */
+        text-align: center; /* Texto centrado */
+        text-decoration: none; /* Sin subrayado */
+        display: inline-block; /* Mostrar como bloque en línea */
+        font-size: 17px; /* Tamaño del texto reducido */
+        font-weight: bold; /* Texto en negrita */
+        border-radius: 15px; /* Bordes redondeados más pequeños */
+        transition: background-color 0.3s, transform 0.2s; /* Transición suave de color y efecto de clic */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        cursor: pointer; /* Cambia el cursor a puntero */
+        width: 370px; /* Botón más pequeño */
+        height: 50px; /* Altura más pequeña */
+        display: flex;
+        justify-content: center; /* Centra el contenido horizontalmente */
+        align-items: center; /* Centra el contenido verticalmente */
+        font-family: "Montserrat", sans-serif;
+        margin: 7px;
+        transition: 0.3s ease;
+      }
+      .llenar h2
+        {
+            font-size: 40px;
+            font-family: "Montserrat", sans-serif;
+            text-align: center;
+            margin-top: 15px;
+
+          }
+          .botoniniciarsesion{
+            background-color:#FFA800; /* Color de fondo */
+            border: none; /* Sin bordes */
+            color: rgb(253, 253, 253); /* Texto en blanco */
+            text-align: center; /* Texto centrado */
+            text-decoration: none; /* Sin subrayado */
+            display: inline-block; /* Mostrar como bloque en línea */
+            font-size: 17px; /* Tamaño del texto reducido */
+            font-weight: bold; /* Texto en negrita */
+            border-radius: 15px; /* Bordes redondeados más pequeños */
+            transition: background-color 0.3s, transform 0.2s; /* Transición suave de color y efecto de clic */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+            cursor: pointer; /* Cambia el cursor a puntero */
+            width: 370px; /* Botón más pequeño */
+            height: 50px; /* Altura más pequeña */
+            display: flex;
+            justify-content: center; /* Centra el contenido horizontalmente */
+            align-items: center; /* Centra el contenido verticalmente */
+            font-family: "Montserrat", sans-serif;
+            margin: 7px;
+            transition: 0.3s ease;
+            margin-top: 45px;
+            }
+            .botoniniciarsesion:hover{
+              background-color: #FFA800;
+              transform: scale(1.1);
+            }
+          
+      
