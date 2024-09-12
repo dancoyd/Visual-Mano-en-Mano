@@ -71,6 +71,10 @@ header nav {
   align-items: center; /* Centra el contenido verticalmente */
   font-family: "Montserrat", sans-serif;
   gap: 8px;}
+  .botoniniciarsesion :hover{
+    border: 2px;
+    border-color: rgb(255, 255, 255);
+  }
 
 .botoncrearcuenta{
   background-color: #ffffff; /* Color de fondo */
@@ -91,9 +95,18 @@ header nav {
   justify-content: center; /* Centra el contenido horizontalmente */
   align-items: center; /* Centra el contenido verticalmente */
   font-family: "Montserrat", sans-serif;
+  border: 2px solid white;
   gap: 8px;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: border;
 
 }
+.botoncrearcuenta:hover{
+  border: 2px solid black;
+}
+
+
 .botonquien{ 
   color: rgb(255, 254, 254); /* Texto en blanco */
   text-align: center; /* Texto centrado */
@@ -161,7 +174,7 @@ font-size: 25px ;
 letter-spacing: -px;
 }
 .botoncrearcuenta2{
-  background-color: #000000; /* Color de fondo */
+  background-color: #FFA800; /* Color de fondo */
   border: none; /* Sin bordes */
   color: white; /* Texto en blanco */
   text-align: center; /* Texto centrado */
@@ -180,4 +193,8 @@ letter-spacing: -px;
   align-items: center; /* Centra el contenido verticalmente */
   font-family: "Montserrat", sans-serif;
   gap: 8px;
+}
+.botoncrearcuenta2:hover{
+  background-color: #000000;
+  transform: scale(1.1);
 }
