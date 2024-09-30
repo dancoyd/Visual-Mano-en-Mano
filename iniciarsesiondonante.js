@@ -1,4 +1,4 @@
-document.getElementById('conteiner').addEventListener('botoniniciarsesion', function (e) {
+document.getElementById('conteiner').addEventListener('submit', function (e) {
     e.preventDefault();
 
 
@@ -11,7 +11,7 @@ document.getElementById('conteiner').addEventListener('botoniniciarsesion', func
 
 
    
-    fetch('https://linkdelback.app/', {
+    fetch('', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

@@ -53,7 +53,6 @@ header{
         background-color: #E8EFFB; /* Color de fondo */
         border: none; /* Sin bordes */
         color: rgb(0, 0, 0); /* Texto en blanco */
-        text-align: center; /* Texto centrado */
         text-decoration: none; /* Sin subrayado */
         display: inline-block; /* Mostrar como bloque en línea */
         font-size: 17px; /* Tamaño del texto reducido */
@@ -65,17 +64,18 @@ header{
         width: 370px; /* Botón más pequeño */
         height: 50px; /* Altura más pequeña */
         display: flex;
-        justify-content: center; /* Centra el contenido horizontalmente */
-        align-items: center; /* Centra el contenido verticalmente */
+        justify-content: flex-start; /* Centra el contenido horizontalmente */
+        align-items: flex-start; /* Centra el contenido verticalmente */
         font-family: "Montserrat", sans-serif;
         margin: 10px;
         transition: 0.3s ease;
+        padding-left: 20px;
+        box-sizing: border-box;
       }
       .Contraseña{
         background-color: #E8EFFB; /* Color de fondo */
         border: none; /* Sin bordes */
         color: rgb(0, 0, 0); /* Texto en blanco */
-        text-align: center; /* Texto centrado */
         text-decoration: none; /* Sin subrayado */
         display: inline-block; /* Mostrar como bloque en línea */
         font-size: 17px; /* Tamaño del texto reducido */
@@ -87,11 +87,13 @@ header{
         width: 370px; /* Botón más pequeño */
         height: 50px; /* Altura más pequeña */
         display: flex;
-        justify-content: center; /* Centra el contenido horizontalmente */
+        justify-content: flex-start; /* Centra el contenido horizontalmente */
         align-items: center; /* Centra el contenido verticalmente */
         font-family: "Montserrat", sans-serif;
         margin: 7px;
         transition: 0.3s ease;
+        padding-left: 20px;
+        box-sizing: border-box;
       }
       .llenar h2
         {

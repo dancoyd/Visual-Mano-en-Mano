@@ -54,7 +54,7 @@ header nav {
 .botoniniciarsesion{
   background-color: #000000; /* Color de fondo */
   border: none; /* Sin bordes */
-  color: white; /* Texto en blanco */
+  color: rgb(255, 255, 255); /* Texto en blanco */
   text-align: center; /* Texto centrado */
   text-decoration: none; /* Sin subrayado */
   display: inline-block; /* Mostrar como bloque en línea */
@@ -70,11 +70,16 @@ header nav {
   justify-content: center; /* Centra el contenido horizontalmente */
   align-items: center; /* Centra el contenido verticalmente */
   font-family: "Montserrat", sans-serif;
-  gap: 8px;}
-  .botoniniciarsesion :hover{
-    border: 2px;
-    border-color: rgb(255, 255, 255);
-  }
+  border: 2px solid rgb(0, 0, 0);
+  gap: 8px;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: border;
+
+}
+.botoniniciarsesion:hover{
+  border: 2px solid rgb(255, 255, 255);
+}
 
 .botoncrearcuenta{
   background-color: #ffffff; /* Color de fondo */
@@ -104,6 +109,7 @@ header nav {
 }
 .botoncrearcuenta:hover{
   border: 2px solid black;
+  
 }
 
 

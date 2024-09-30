@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+}
 header{
     padding: 20px;
     display: flex;
@@ -224,40 +230,39 @@ header{
     font-size: 25px ;
     letter-spacing: -px;
     }
-   
-    .conteiner{
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      gap: 60px;
-      align-items: flex-start;
-      max-width: 1200px; /* Ajusta el valor de acuerdo al tamaño que quieras */
-      margin: 0 auto; /* Centra el texto */
+    
+    #contentitemscarrusel{
+    height: 200px;
+    overflow: hidden;
     }
-    .botoncomenzarahora{
-      background-color: #FFA800; /* Color de fondo */
-      border: none; /* Sin bordes */
-      color: white; /* Texto en blanco */
-      text-align: center; /* Texto centrado */
-      text-decoration: none; /* Sin subrayado */
-      display: inline-block; /* Mostrar como bloque en línea */
-      font-size: 15px; /* Tamaño del texto reducido */
-      font-weight: bold; /* Texto en negrita */
-      border-radius: 30px; /* Bordes redondeados más pequeños */
-      transition: background-color 0.3s, transform 0.2s; /* Transición suave de color y efecto de clic */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-      cursor: pointer; /* Cambia el cursor a puntero */
-      width: 250px; /* Botón más pequeño */
-      height: 45px; /* Altura más pequeña */
-      display: flex;
-      justify-content: center; /* Centra el contenido horizontalmente */
-      align-items: center; /* Centra el contenido verticalmente */
-      font-family: "Montserrat", sans-serif;
-      gap: 8px;
-      transition: 0.3s ease;
+    
+    .conteiner{
+      height: 100%;
+      position: relative;
 
     }
-    .botoncomenzarahora:hover{
-      background-color: #FFA800;
-      transform: scale(1.1);
+    .tarjetacarrusel{
+      height: 100%;    
+    }
+    .flechascarrusel{
+      height: 100%;
+      position: absolute  ;
+      top: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    #tajetacarrusel-1{
+      background-color: rgb(167, 103, 226);
+    }
+    #tajetacarrusel-2{
+      background-color: rgb(196, 46, 41);
+    } 
+    #tajetacarrusel-3{
+      background-color: rgb(19, 122, 50);
+    }
+    a{
+      text-decoration: none;
     }
