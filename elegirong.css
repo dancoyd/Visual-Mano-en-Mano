@@ -232,10 +232,15 @@ header{
     }
     
     #contentitemscarrusel {
-      height: 400px;
-      width: 500px;
+      height: 350px; /* Hacer el carrusel un poco más corto */
+      width: 600px; /* Hacer el carrusel un poco más ancho */
       overflow: hidden; /* Mantiene el contenido dentro del carrusel sin crear barras de scroll */
-      position: relative;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor del carrusel */
+      border-radius: 10px; /* Opcional: bordes redondeados para un estilo más moderno */
   }
   
   .conteiner {

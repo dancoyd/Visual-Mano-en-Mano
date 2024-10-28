@@ -31,7 +31,7 @@
 // });
 
 var imagenes = [
-    "Group 111.svg", "Group 112.svg", "viena.jpg"
+    "miami3.jpg", "miami2.jpg", "viena.jpg"
 ]
 
 const carrusel = document.getElementById('contentitemscarrusel');
