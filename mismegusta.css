@@ -212,24 +212,37 @@ header{
       transition-duration: 400ms;
       transition-property: width, left;
     }
-    .conteiner{
+    #image-container {
       display: flex;
-      justify-content: center;
-      flex-direction: row;
-      gap: 60px;
-      align-items: flex-start;
-      max-width: 1200px; /* Ajusta el valor de acuerdo al tamaño que quieras */
-      margin: 0 auto; /* Centra el texto */
+      flex-wrap: wrap;
+      gap: 20px;
     }
-    .imagenremeraazul img {
-      width: 500px;  /* Cambia el ancho a 200 píxeles */
-      height: auto;  /* Mantiene la proporción de la imagen */
-      margin-right: 30px;
+    
+    #image-container .image-item {
+      display: flex;
+      flex-direction: column; /* El título está encima de la imagen */
+      align-items: flex-start; /* Alinea los elementos a la izquierda */
     }
-    .textitolanding{
-    margin-top: 70px;
-    margin-left: 40px;
-    font-family: "Red Hat Display", sans-serif;
-    font-size: 25px ;
-    letter-spacing: -px;
+    
+    #image-container img {
+      width: 300px; /* Mantiene el tamaño de la imagen */
+      height: auto; /* Conserva la proporción de la imagen */
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    
+    #image-container h3 {
+      font-size: 20px; /* Reduce el tamaño del título ligeramente */
+      margin-bottom: 5px; /* Acerca el título a la imagen */
+      text-align: left; /* Alinea el título a la izquierda */
+      width: 300px; /* Asegura que el título tenga el mismo ancho que la imagen */
+      font-family:"Red Hat Display", sans-serif;
+    }
+    
+    #image-container p {
+      font-size: 1em; /* Reduce el tamaño del texto proporcionalmente */
+      color: #555;
+      margin-top: 5px; /* Acerca la descripción a la imagen */
+      text-align: left; /* Alinea la descripción a la izquierda */
+      width: 300px; /* Asegura que la descripción tenga el mismo ancho que la imagen */
     }

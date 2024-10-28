@@ -231,38 +231,70 @@ header{
     letter-spacing: -px;
     }
     
-    #contentitemscarrusel{
-    height: 200px;
-    overflow: hidden;
-    }
-    
-    .conteiner{
+    #contentitemscarrusel {
+      height: 400px;
+      width: 500px;
+      overflow: hidden; /* Mantiene el contenido dentro del carrusel sin crear barras de scroll */
+      position: relative;
+  }
+  
+  .conteiner {
       height: 100%;
       position: relative;
-
-    }
-    .tarjetacarrusel{
-      height: 100%;    
-    }
-    .flechascarrusel{
+  }
+  
+  .tarjetacarrusel {
       height: 100%;
-      position: absolute  ;
+  }
+  
+  .flechascarrusel {
+      position: absolute;
       top: 0;
       width: 100%;
+      height: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 20px;
-    }
-    #tajetacarrusel-1{
-      background-color: rgb(167, 103, 226);
-    }
-    #tajetacarrusel-2{
-      background-color: rgb(196, 46, 41);
-    } 
-    #tajetacarrusel-3{
-      background-color: rgb(19, 122, 50);
-    }
-    a{
+      pointer-events: none; /* Permite que solo los enlaces (las flechas) reciban los eventos */
+  }
+  
+  .flechascarrusel a {
+      pointer-events: all; /* Habilitar clics en las flechas */
       text-decoration: none;
-    }
+  }
+  
+  .flechascarrusel .prev,
+  .flechascarrusel .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.5); /* Opcional: para ver las flechas con fondo */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      border-radius: 50%;
+  }
+  
+  .flechascarrusel .prev {
+      left: -50px; /* Coloca la flecha izquierda fuera del contenedor */
+  }
+  
+  .flechascarrusel .next {
+      right: -50px; /* Coloca la flecha derecha fuera del contenedor */
+  }
+  
+  #tarjetacarrusel-1 {
+      background-color: red;
+  }
+  
+  #tarjetacarrusel-2 {
+      background-color: gray;
+  }
+  
+  #tarjetacarrusel-3 {
+      background-color: transparent;
+  }
