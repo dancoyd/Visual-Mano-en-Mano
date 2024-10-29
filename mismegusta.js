@@ -1,24 +1,18 @@
-let savedItems = {
-  "savedItems": [
-    {
-      "id": 1,
-      "title": "Brasla te amo",
-      "imageURL": "viena.jpg",
-      
-    },
-    {
-      "id": 2,
-      "title": "Vigi carrea",
-      "imageURL": "viena.jpg",
-      
-    }
-  ]
-};
+
 
 // Ejemplo de cómo mostrar las imágenes en la página
 const container = document.getElementById('image-container'); // Asegúrate de tener este div en tu HTML
 
-savedItems.savedItems.forEach(item => {
+fetch('./imagenesgusta.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Error al cargar el archivo JSON');
+        }
+        return response.json();
+    })
+    .then(data => {
+        data.forEach(item => {
+
   // Crear un div para agrupar el título, la imagen y la descripción
   const itemContainer = document.createElement('div');
   itemContainer.classList.add('image-item'); // Agregar la clase para aplicar los estilos
@@ -28,7 +22,7 @@ savedItems.savedItems.forEach(item => {
   titleElement.textContent = item.title;
 
   const imageElement = document.createElement('img');
-  imageElement.src = item.imageURL;
+  imageElement.src = item.imagen;
   imageElement.alt = item.title;
 
   const descriptionElement = document.createElement('p');
@@ -41,4 +35,8 @@ savedItems.savedItems.forEach(item => {
 
   // Agregar el contenedor del ítem al contenedor principal
   container.appendChild(itemContainer);
+});
+})
+.catch(error => {
+    console.error('Hubo un problema con el fetch:', error);
 });

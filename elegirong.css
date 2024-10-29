@@ -232,8 +232,8 @@ header{
     }
     
     #contentitemscarrusel {
-      height: 350px; /* Hacer el carrusel un poco más corto */
-      width: 600px; /* Hacer el carrusel un poco más ancho */
+      height: 400px; /* Hacer el carrusel un poco más corto */
+      width: 500px; /* Hacer el carrusel un poco más ancho */
       overflow: hidden; /* Mantiene el contenido dentro del carrusel sin crear barras de scroll */
       position: absolute;
       top: 50%;
@@ -303,3 +303,25 @@ header{
   #tarjetacarrusel-3 {
       background-color: transparent;
   }
+  .tarjetacarrusel {
+    position: relative;
+    width: 500px; /* Ancho fijo */
+    height: 400px; /* Altura fija */
+    overflow: hidden; /* Oculta las partes de la imagen que sobresalen */
+}
+.tarjetacarrusel img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover; /* Cubre el contenedor manteniendo la proporción */
+  border-radius: 10px; /* Bordes redondeados */
+}
+.titulo-imagen {
+    position: top;
+    bottom: 10px;
+    left: 10px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem; /* Ajusta según el tamaño del texto que prefieras */
+    font-family: "Red Hat Display", sans-serif ;
+}
