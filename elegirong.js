@@ -14,17 +14,15 @@ fetch('./imagens.json')
                 <div class="tarjetacarrusel" id="tajetacarrusel-${index + 1}">
                     <img src="${item.url}" alt="Imagen ${index + 1}" />
                     <div class="titulo-imagen">${item.title}</div>
-                </div>
-                <div class="numero">${item.number}</div>
-                </div>
-                <div class="email">${item.email}</div>
+                    <div class="numero">${item.number}</div>
+                    <div class="email">${item.email}</div>
                 </div>
                 <div class="flechascarrusel">
                     <a href="#conteiner-${index === 0 ? data.length : index}">
-                        <i class="fa-solid fa-circle-left"></i>
+                        <img src= "iconofelcha.png" class="flechaiz" >
                     </a>
                     <a href="#conteiner-${index === data.length - 1 ? 1 : index + 2}">
-                        <i class="fa-solid fa-circle-right"></i>
+                    <img src= "iconofelcha.png" class="flechader" >
                     </a>
                 </div>
             </div>

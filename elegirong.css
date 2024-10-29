@@ -267,31 +267,8 @@ header{
       pointer-events: all; /* Habilitar clics en las flechas */
       text-decoration: none;
   }
-  
-  .flechascarrusel .prev,
-  .flechascarrusel .next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 10;
-      width: 40px;
-      height: 40px;
-      background-color: rgba(0, 0, 0, 0.5); /* Opcional: para ver las flechas con fondo */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      border-radius: 50%;
-  }
-  
-  .flechascarrusel .prev {
-      left: -50px; /* Coloca la flecha izquierda fuera del contenedor */
-  }
-  
-  .flechascarrusel .next {
-      right: -50px; /* Coloca la flecha derecha fuera del contenedor */
-  }
-  
+
+
   #tarjetacarrusel-1 {
       background-color: red;
   }
@@ -324,4 +301,14 @@ header{
     border-radius: 5px;
     font-size: 1rem; /* Ajusta según el tamaño del texto que prefieras */
     font-family: "Red Hat Display", sans-serif ;
+}
+.flechaiz {
+max-width: 40px;
+max-height: 40px;
+transform : rotate(180deg);
+}
+.flechader{
+  max-width: 40px;
+max-height: 40px;
+
 }
