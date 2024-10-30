@@ -26,8 +26,8 @@ fetch('./imagens.json')
         // Agregamos los botones fuera del contenedor
         document.body.innerHTML += `
             <div class="botones-carrusel">
-                <button onclick="moverIzquierda(${data.length})" class="boton-izquierdo">Izquierda</button>
-                <button onclick="moverDerecha(${data.length})" class="boton-derecho">Derecha</button>
+                <button onclick="moverIzquierda(${data.length})" class="boton-izquierdo"><img src="iconofelcha.png"></button>
+                <button onclick="moverDerecha(${data.length})" class="boton-derecho"><img src="iconofelcha.png"></button>
             </div>
         `;
     })

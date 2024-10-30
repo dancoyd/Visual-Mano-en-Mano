@@ -236,6 +236,7 @@ header{
       width: 500px; /* Hacer el carrusel un poco más ancho */
       overflow: hidden; /* Mantiene el contenido dentro del carrusel sin crear barras de scroll */
       position: absolute;
+      
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -341,5 +342,31 @@ max-height: 40px;
   justify-content: center; /* Centra la imagen en el contenedor */
 }
 
+.boton-derecho img {
+  width: 60px;  /* Cambia el ancho a 100 píxeles */
+  height: auto;  /* Mantiene la proporción original */
+}
 
+.boton-izquierdo img {
+  width: 60px;  /* Cambia el ancho a 100 píxeles */
+  height: auto;  /* Mantiene la proporción original */
+}
+
+.boton-derecho, .boton-izquierdo {
+  position: absolute;
+  top: 50%; /* Posiciona verticalmente en el centro */
+  transform: translateY(-50%); /* Ajusta para centrar */
+  background-color: transparent;
+  border: 0;
+  cursor: pointer; /* Cambia el cursor para indicar que es un botón */
+}
+
+.boton-derecho {
+  right: 300px; /* Ajusta la posición del botón derecho */
+  transform: translateY(-50%) rotate(180deg); /* Rota 180 grados y centra verticalmente */
+}
+
+.boton-izquierdo {
+  left: 300px; /* Ajusta la posición del botón izquierdo */
+}
 
