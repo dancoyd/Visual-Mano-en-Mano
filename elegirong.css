@@ -270,11 +270,11 @@ header{
 
 
   #tarjetacarrusel-1 {
-      background-color: red;
+      background-color: rgb(255, 255, 255);
   }
   
   #tarjetacarrusel-2 {
-      background-color: gray;
+      background-color: rgb(255, 255, 255);
   }
   
   #tarjetacarrusel-3 {
@@ -328,3 +328,18 @@ max-height: 40px;
   font-weight: 500;
 
 }
+#contentitemscarrusel {
+  display: flex; /* Alinea los elementos en una fila */
+  overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+  scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+.conteiner {
+  min-width: 100%; /* Cada contenedor ocupa el ancho completo */
+  flex-shrink: 0; /* Evita que los elementos se reduzcan */
+  display: flex;
+  justify-content: center; /* Centra la imagen en el contenedor */
+}
+
+
+
