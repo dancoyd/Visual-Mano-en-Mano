@@ -232,7 +232,7 @@ header{
     }
     
     #contentitemscarrusel {
-      height: 400px; /* Hacer el carrusel un poco más corto */
+      height: 405px; /* Hacer el carrusel un poco más corto */
       width: 500px; /* Hacer el carrusel un poco más ancho */
       overflow: hidden; /* Mantiene el contenido dentro del carrusel sin crear barras de scroll */
       position: absolute;
@@ -311,14 +311,14 @@ max-height: 40px;
     font-size: 25px; /* Ajusta según el tamaño del texto que prefieras */
     font-family: "Red Hat Display", sans-serif ;
     margin-left: 10px;
-    font-weight: 620;
+    font-weight: 650;
 }
 .email{
   color: rgb(0, 0, 0);
   font-size: 15px; /* Ajusta según el tamaño del texto que prefieras */
   font-family: "Red Hat Display", sans-serif ;
   margin-left: 10px;
-  font-weight: 500;
+  font-weight: 650;
 }
 .numero{
   color: rgb(0, 0, 0);
@@ -326,7 +326,7 @@ max-height: 40px;
   font-family: "Red Hat Display", sans-serif ;
   margin-left: 10px;
   margin-top: 5px;
-  font-weight: 500;
+  font-weight: 650;
 
 }
 #contentitemscarrusel {

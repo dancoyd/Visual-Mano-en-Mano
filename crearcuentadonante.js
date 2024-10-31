@@ -1,9 +1,6 @@
 document.getElementById('conteiner').addEventListener('submit', function (e) {
     e.preventDefault();
-
-
-
-
+    
     const datosFormulario = new FormData(e.target);
 
 

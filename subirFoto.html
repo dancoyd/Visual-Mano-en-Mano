@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Foto de Perfil</title>
+    <link rel="stylesheet" href="subirFoto.css">
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Subir Foto de Perfil</title>
+        <link rel="stylesheet" href="subirFoto.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Foto perfil</h2>
+            <div class="upload-box" onclick="document.getElementById('inputFoto').click()">
+                <img src="image 6.png" alt="Icono de imagen" class="icon">
+                <p class="depositar">Depositar imagen o extraer de archivos</p>
+                <input type="file" id="inputFoto" accept="image/*" style="display: none;" onchange="convertirImagen()">
+            </div>
+            <button class="register-button" onclick="registrarFoto()">Registrarse</button>
+            <p id="base64Output" style="display: none;"></p>
+        </div>
+        
+        <script>
+            function convertirImagen() {
+                const fileInput = document.getElementById('inputFoto').files[0];
+                const reader = new FileReader();
+    
+                reader.onloadend = function() {
+                    const base64String = reader.result.replace("data:", "").replace(/^.+,/, "");
+                    document.getElementById("base64Output").innerText = base64String;
+                    console.log("Base64:", base64String);
+                    // Aquí podrías enviar base64String a tu backend si fuera necesario
+                };
+                
+                if (fileInput) {
+                    reader.readAsDataURL(fileInput);
+                } else {
+                    alert("Por favor selecciona una imagen");
+                }
+            }
+    
+            function registrarFoto() {
+                alert("Foto registrada");
+                // Aquí puedes añadir lógica adicional para registrar la foto si es necesario
+            }
+        </script>
+    </body>
+    </html>
