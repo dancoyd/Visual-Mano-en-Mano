@@ -1,27 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
-header{
+
+header {
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between
-  }
-  .logo a {
+    justify-content: space-between;
+}
+
+.logo a {
     display: flex;
     gap: 15px;
-  }
-  .logo img {
+}
+
+.logo img {
     height: 70px;
     width: auto;
-  }
-  
-  header nav {
+}
+
+header nav {
     display: flex;
     gap: 12px;
-  }
-  /* clase de nombre de logo */
-  .nombrePagina{ 
+}
+
+.nombrePagina { 
     align-items: center;
     display: flex;
     text-decoration: none;
@@ -29,15 +32,17 @@ header{
     font-weight: 900;
     font-size: 24px;
     font-family: "Red Hat Display", sans-serif;
-  }
-  body {
+}
+
+body {
     background-image: url('./Group\ 114.svg');
-    margin: 0; /* Elimina el margen predeterminado del cuerpo */
-    background-size: 100% auto; /* Ajusta el ancho al 100% sin alterar la altura proporcional */
-    background-position: top center; /* Coloca la imagen centrada en la parte superior */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0;
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
     display: flex;
 }
+
 .container {
     width: 450px;
     height: 350px;
@@ -51,65 +56,71 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-    
-    h2 {
-        font-size: 35px;
-        color: rgb(0, 0, 0);
-        margin-bottom: 20px;
-        font-family: "Red Hat Display", sans-serif;
-        font-weight: bolder;
-    }
-    
-    .upload-box {
-        border: 2px dashed #e0e0e0;
-        border-radius: 50%;
-        width: 90px;
-        height: 90px;
-        margin: 0 auto 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: #777;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        margin-top: 45px;
-    }
-    
-    .upload-box:hover {
-        
-        background-color: #f9f9f9;
-    }
-    
-    .icon {
-        width: 40px;
-        height: 40px;
-        margin-bottom: 10px;
-    }
-    
-    .register-button {
-        width: 100%;
-        height:40px ;
-        padding: 10px;
-        background-color: #ff9900;
-        color: #fff;
-        border: none;
-        border-radius: 10px;
-        font-size: 18px;
-        font-family: "Red Hat Display", sans-serif ;
-        font-weight: bolder;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        margin-top: 70px; /* Ajusta este valor según cuánto espacio quieras */
-    }
-    
-    .register-button:hover {
-        background-color: #e68a00;
-    }
-    .depositar{
-        margin-top: 100px;
-        width: 150px;
-    }
-    .icon {
-        
-    }
+
+h2 {
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: bolder;
+}
+
+.upload-box {
+    border: 2px dashed #e0e0e0;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.upload-box:hover {
+    background-color: #f9f9f9;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.depositar {
+    margin-top: 190px;
+    width: 150px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+.register-button {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 90px;
+}
+
+.register-button:hover {
+    background-color: #e68a00;
+}
