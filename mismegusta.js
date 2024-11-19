@@ -3,7 +3,7 @@
 // Ejemplo de cómo mostrar las imágenes en la página
 const container = document.getElementById('image-container'); // Asegúrate de tener este div en tu HTML
 
-fetch('./imagenesgusta.json')
+fetch('https://proyecto-donaciones-iota.vercel.app')
     .then(response => {
         if (!response.ok) {
             throw new Error('Error al cargar el archivo JSON');

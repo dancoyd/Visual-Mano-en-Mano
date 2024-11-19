@@ -11,7 +11,7 @@ document.getElementById('conteiner').addEventListener('submit', function (e) {
 
 
    
-    fetch('https://linkdelback.app/', {
+    fetch('https://proyecto-donaciones-iota.vercel.app', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

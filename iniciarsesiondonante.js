@@ -11,7 +11,7 @@ document.getElementById('conteiner').addEventListener('submit', function (e) {
 
 
    
-    fetch('', {
+    fetch('https://proyecto-donaciones-iota.vercel.app', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

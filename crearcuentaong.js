@@ -4,7 +4,7 @@ document.getElementById('conteiner').addEventListener('submit', function (e) {
     const datosFormulario = new FormData(e.target);
     const datos = Object.fromEntries(datosFormulario.entries());
 
-    fetch('https://linkdelback.app/', {
+    fetch('https://proyecto-donaciones-iota.vercel.app', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
