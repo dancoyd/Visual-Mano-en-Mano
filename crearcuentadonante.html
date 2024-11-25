@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dan</title>
+    <title>Crear Cuenta Donante</title>
     <link rel="stylesheet" href="crearcuentadonante.css">
 </head>
 
@@ -13,26 +13,26 @@
     <header>
         <div class="logo">
             <a href="./index.html" class="nombrePagina">
-                <img src="./Group 111.svg"></img>
+                <img src="./Group 111.svg" alt="Logo">
                 <p>Mano en Mano</p>
             </a>
-            <div>
-        </header>
-        <form class="conteiner">
-            <div class="llenar">
-              <h2>Crear cuenta</h2>
-                <div class="inputs">
-                    <input type="Nombre" placeholder="Nombre y apellido" class="espacios">
-                    <input type="Email" placeholder="Email" class="espacios">
-                    <input type="contraseña" placeholder="Contraseña" class="espacios">
-                    <input type="telefono" placeholder="Telefono" class="espacios">
-                    <input type="codigopostal" placeholder="Codigopostal" class="espacios">
-                    <input type="direccion" placeholder="Direccion" class="espacios">
-                </div>
-                    <button class="botoniniciarsesion"> Registrarse </button>
-
+        </div>
+    </header>
+    <form id="form-crear-donante" class="conteiner">
+        <div class="llenar">
+            <h2>Crear cuenta</h2>
+            <div class="inputs">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" class="espacios">
+                <input type="email" name="email" id="email" placeholder="Email" class="espacios">
+                <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" class="espacios">
+                <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" class="espacios">
+                <input type="text" name="codigopostal" id="codigopostal" placeholder="Código postal" class="espacios">
+                <input type="text" name="direccion" id="direccion" placeholder="Dirección" class="espacios">
             </div>
-          </form>
-           <script src="crearcuentadonante.js"></script>
-      </body>
-    </html>
+            <button type="submit" class="botoniniciarsesion">Registrarse</button>
+        </div>
+    </form>
+    <script src="crearcuentadonante.js"></script>
+</body>
+
+</html>

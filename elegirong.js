@@ -2,7 +2,7 @@
 const carrusel = document.getElementById('contentitemscarrusel');
 let currentIndex = 0;
 
-fetch('https://proyecto-donaciones-iota.vercel.app')
+fetch('https://proyecto-donaciones-six.vercel.app/')
     .then(response => {
         if (!response.ok) {
             throw new Error('Error al cargar el archivo JSON');
