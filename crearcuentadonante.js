@@ -3,18 +3,24 @@ document.getElementById('form-crear-donante').addEventListener('submit', async f
 
     // Capturar los datos del formulario
     const datosFormulario = new FormData(e.target);
-    const datos = Object.fromEntries(datosFormulario.entries());
+    const body = Object.fromEntries(datosFormulario.entries()); // Obtiene los datos en un objeto
 
-  
-    console.log('Datos a enviar:', datos);
+    console.log('Datos capturados del formulario:', body);
+
+    // Llama a la función para enviar los datos al back-end
+    await crearDonante(body);
+});
+
+async function crearDonante(body) {
+    console.log('Datos a enviar:', body);
 
     try {
-        const response = await fetch('https://proyecto-donaciones-six.vercel.app/donantes', {
+        const response = await fetch('https://proyecto-donaciones-six.vercel.app/donantes/donantes', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(datos),
+            body: JSON.stringify(body),
         });
 
         console.log('Estado de la respuesta:', response.status);
@@ -35,9 +41,9 @@ document.getElementById('form-crear-donante').addEventListener('submit', async f
         }
 
         alert('¡Cuenta creada exitosamente!');
-        window.location.href = './login.html';
+        window.location.href = './login.html'; // Redirigir al usuario al login
     } catch (error) {
         console.error('Error en el proceso:', error);
         alert(`Hubo un problema al crear la cuenta: ${error.message || 'Inténtalo nuevamente.'}`);
     }
-});
+}
