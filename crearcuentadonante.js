@@ -15,7 +15,7 @@ async function crearDonante(body) {
     console.log('Datos a enviar:', body);
 
     try {
-        const response = await fetch('https://proyecto-donaciones-six.vercel.app/donantes/donantes', {
+        const response = await fetch('https://proyecto-donaciones-six.vercel.app/donantes', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
