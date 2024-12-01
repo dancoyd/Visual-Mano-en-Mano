@@ -12,7 +12,6 @@ document.getElementById('form-crear-donante').addEventListener('submit', async f
 });
 
 async function crearDonante(body) {
-    console.log('Datos a enviar:', body);
     const host = 'http://127.0.0.1:3000' //'https://proyecto-donaciones-six.vercel.app'
     try {
         const response = await fetch(`${host}/donantes`, {
