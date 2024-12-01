@@ -10,8 +10,9 @@ document.getElementById('conteiner').addEventListener('submit', function (e) {
     const datos = Object.fromEntries(datosFormulario.entries());
 
 
-   
-    fetch('https://proyecto-donaciones-six.vercel.app', {
+    console.log('Datos a enviar:', body);
+    const host = 'http://127.0.0.1:3000' //'https://proyecto-donaciones-six.vercel.app'
+    fetch(`${host}/ongosc/login`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

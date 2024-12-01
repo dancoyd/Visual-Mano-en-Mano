@@ -13,9 +13,9 @@ document.getElementById('form-crear-donante').addEventListener('submit', async f
 
 async function crearDonante(body) {
     console.log('Datos a enviar:', body);
-
+    const host = 'http://127.0.0.1:3000' //'https://proyecto-donaciones-six.vercel.app'
     try {
-        const response = await fetch('https://proyecto-donaciones-six.vercel.app/donantes', {
+        const response = await fetch(`${host}/donantes`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ async function crearDonante(body) {
         }
 
         alert('¡Cuenta creada exitosamente!');
-        window.location.href = './login.html'; // Redirigir al usuario al login
+        window.location.href = './iniciarsesiondonante.html'; // Redirigir al usuario al login
     } catch (error) {
         console.error('Error en el proceso:', error);
         alert(`Hubo un problema al crear la cuenta: ${error.message || 'Inténtalo nuevamente.'}`);
