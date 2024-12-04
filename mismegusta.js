@@ -2,7 +2,7 @@
 
 // Ejemplo de cómo mostrar las imágenes en la página
 const container = document.getElementById('image-container'); // Asegúrate de tener este div en tu HTML
-const idDonante = 25
+const idDonante = 28
 const host = 'http://127.0.0.1:3000'//'https://proyecto-donaciones-six.vercel.app'
 fetch(`${host}/Like/${idDonante}`)
     .then(response => {
